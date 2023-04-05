@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import CelebrityEdit from "./pages/CelebrityEdit";
+import CelebrityIndex from "./pages/CelebrityIndex";
+import CelebrityNew from "./pages/CelebrityNew";
+import CelebrityShow from "./pages/CelebrityShow";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+import "./App.css";
+import mockCelebrities from "./mockCelebrity.js";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
+const App = () => {
+  const [celebrities, setCelebrites] = useState(mockCelebrities);
+  console.log(celebrities);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="celebrityindex" element={<CelebrityIndex />} />
+        <Route path="celebrityshow" element={<CelebrityShow />} />
+        <Route path="celebritynew" element={<CelebrityNew />} />
+        <Route path="celebrityedit" element={<CelebrityEdit />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;
