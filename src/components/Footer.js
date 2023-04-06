@@ -7,6 +7,7 @@ function Footer() {
       <a href="https://github.com/JacobR96 ">Jacobs Github</a>
       <br />
       <a href="https://github.com/JoelCarr619">Joels Github</a>
+
     </>
   );
 }
