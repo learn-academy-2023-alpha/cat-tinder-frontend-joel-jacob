@@ -3,7 +3,11 @@ import React from "react";
 function Footer() {
   return (
     <>
-      <h1> Footer </h1>
+      <p>&copy; Joel Carr & Jacob Ross</p>
+      <a href="https://github.com/JacobR96 ">Jacobs Github</a>
+      <br />
+      <a href="https://github.com/JoelCarr619">Joels Github</a>
+
     </>
   );
 }

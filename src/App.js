@@ -14,7 +14,6 @@ import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   const [celebrities, setCelebrites] = useState(mockCelebrities);
-  console.log(celebrities);
   return (
     <>
       <Header />
