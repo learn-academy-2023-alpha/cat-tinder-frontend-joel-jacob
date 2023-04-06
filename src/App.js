@@ -9,7 +9,7 @@ import CelebrityShow from "./pages/CelebrityShow";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import "./App.css";
-import mockCelebrities from "./mockCelebrity.js";
+import mockCelebrities from "./mockCelebrity";
 import { Routes, Route } from "react-router-dom";
 
 const App = () => {
