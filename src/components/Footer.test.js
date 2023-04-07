@@ -4,17 +4,16 @@ import { screen, render } from "@testing-library/react";
 
 describe("<Footer />", () => {
   it("renders without crashing", () => {
+    const div = document.createElement("div");
     render(
       <BrowserRouter>
         <Footer />
-      </BrowserRouter>
+      </BrowserRouter>,
+      div
     );
 
     screen.logTestingPlaygroundURL();
-    const Footer = screen.expect(Footer).toBeInTheDocument();
-    const image = screen.getByRole("img", {
-      name: /celebrity death match is on, experience this error\./i,
-    });
-    expect(image).toBeInTheDocument();
+    const footer = screen.getByText(/© joel carr & jacob ross/i);
+    expect(footer).toBeInTheDocument();
   });
 });

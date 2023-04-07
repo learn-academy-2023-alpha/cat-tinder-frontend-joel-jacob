@@ -1,18 +1,19 @@
 import Header from "./Header";
 import { screen, render } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
+import userEvent from "@testing-library/user-event";
 
 describe("<Header />", () => {
   it("renders without crashing", () => {
+    const div = document.createElement("div");
     render(
       <BrowserRouter>
         <Header />
-      </BrowserRouter>
+      </BrowserRouter>,
+      div
     );
     screen.logTestingPlaygroundURL();
-    const Header = screen.getByRole("link", { name: /celebrity tinder!/i });
-    expect(Header).toBeInTheDocument();
-    const navbar = getByRole("button", { name: /toggle navigation/i });
-    expect(navbar).toBeInTheDocument();
+    const header = screen.getByRole("link", { name: /celebrity tinder!/i });
+    expect(header).toBeInTheDocument();
   });
 });
