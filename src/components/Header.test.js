@@ -9,5 +9,10 @@ describe("<Header />", () => {
         <Header />
       </BrowserRouter>
     );
+    screen.logTestingPlaygroundURL();
+    const Header = screen.getByRole("link", { name: /celebrity tinder!/i });
+    expect(Header).toBeInTheDocument();
+    const navbar = getByRole("button", { name: /toggle navigation/i });
+    expect(navbar).toBeInTheDocument();
   });
 });
