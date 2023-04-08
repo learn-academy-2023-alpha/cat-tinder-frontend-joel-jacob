@@ -1,6 +1,9 @@
-.me-auto {
-  text-align: center;
+.card {
+  margin: 2rem 0;
 }
-.banner-section {
-  
+
+.celebrity-index-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }

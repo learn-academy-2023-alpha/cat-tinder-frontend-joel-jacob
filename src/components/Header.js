@@ -1,30 +1,12 @@
-// import React from "react";
-
-// function Header() {
-//   return (
-//     <>
-//       <nav className="nav-bar">
-//         <a>Home </a>
-//         <a>Profile </a>
-//         <a>Swipe </a>
-//         <a>Contact Us </a>
-//         <a>Disclaimer </a>
-//       </nav>
-//     </>
-//   );
-// }
-
-// export default Header;
 import React, { useState } from "react";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-} from "reactstrap";
+import {Collapse, Navbar, NavbarToggler,  NavbarBrand,Nav,NavItem,NavLink,} from "reactstrap";
+
+  
+ 
+ 
+  
+  
+  
 
 function Header(props) {
   const [collapsed, setCollapsed] = useState(true);
