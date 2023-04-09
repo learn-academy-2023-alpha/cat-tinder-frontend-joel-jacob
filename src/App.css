@@ -7,3 +7,28 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.celeb-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 50px;
+  height: 50px;
+}
+.body {
+  background-color: #e4dccf;
+  text-align: center;
+}
+
+.nav-bar {
+  background-color: #ffa559;
+}
+.footer-bar {
+  background-color: #ffa559;
+  margin-bottom: 0;
+}
+.top-bottom {
+}
+.top-middle {
+}
+.top-home {
+}
