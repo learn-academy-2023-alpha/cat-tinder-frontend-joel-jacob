@@ -8,7 +8,7 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
-import logo from "/Users/learnacademy/Desktop/cat-tinder-frontend-joel-jacob/src/assests/logo.png";
+import logo from "/Users/learnacademy/Desktop/cat-tinder-frontend/src/assests/logo.png";
 
 function Header(props) {
   const [collapsed, setCollapsed] = useState(true);

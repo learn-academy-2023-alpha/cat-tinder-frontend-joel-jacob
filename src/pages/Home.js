@@ -34,7 +34,7 @@ const Home = () => {
                 src: "https://plus.unsplash.com/premium_photo-1665159097883-d6a5017a637c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
               },
               {
-                caption: "Find love like this for 15.99 a month",
+                caption: "Find love like this for 1500 a month",
                 key: 4,
                 src: "https://images.unsplash.com/photo-1555689070-2d15336749b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
               },
@@ -52,7 +52,9 @@ const Home = () => {
             who share your values and dreams, and help you build a deep,
             meaningful connection. No more wasted time on meaningless matches –
             with us, you'll find the love you've been searching for. Join us
-            today and start your journey to happily ever after.
+            today and start your journey to happily ever after.Why match with
+            the world when you can match within your industry and grow your
+            network. Remember your Network is your NetWorth.
           </h3>
         </section>
 
@@ -75,14 +77,14 @@ const Home = () => {
               <td>200 matches/year</td>
             </tr>
             <tr>
-              <td>Website 3</td>
-              <td>$20/month</td>
+              <td>Match</td>
+              <td>$40/month</td>
               <td>300 matches/year</td>
             </tr>
             <tr>
               <td>Celebrity Tinder</td>
-              <td>$15.99/month</td>
-              <td>350 matches/year</td>
+              <td>$1500/month</td>
+              <td>Premium Top Industry matches/year</td>
             </tr>
           </table>
         </section>
