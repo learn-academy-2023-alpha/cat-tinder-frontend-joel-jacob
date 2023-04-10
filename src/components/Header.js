@@ -1,20 +1,3 @@
-// import React from "react";
-
-// function Header() {
-//   return (
-//     <>
-//       <nav className="nav-bar">
-//         <a>Home </a>
-//         <a>Profile </a>
-//         <a>Swipe </a>
-//         <a>Contact Us </a>
-//         <a>Disclaimer </a>
-//       </nav>
-//     </>
-//   );
-// }
-
-// export default Header;
 import React, { useState } from "react";
 import {
   Collapse,
@@ -25,6 +8,7 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
+import logo from "/Users/learnacademy/Desktop/cat-tinder-frontend/src/assests/logo.png";
 
 function Header(props) {
   const [collapsed, setCollapsed] = useState(true);
@@ -32,26 +16,38 @@ function Header(props) {
   const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
-    <div>
-      <Navbar color="faded" light>
-        <NavbarBrand href="/" className="me-auto">
-          Celebrity Tinder!
-        </NavbarBrand>
-        <NavbarToggler onClick={toggleNavbar} className="me-2" />
-        <Collapse isOpen={!collapsed} navbar>
-          <Nav navbar>
-            <NavItem>
-              <NavLink href="/components/">FILLER TEXT</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                FILLER TEXT
-              </NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
-    </div>
+    <>
+      <div className="nav-bar">
+        <Navbar color="faded" light>
+          <NavLink>
+            <img
+              src={logo}
+              alt="logo for celeb tinder"
+              className="celeb-logo"
+            />
+          </NavLink>
+          <NavbarBrand href="/" className="me-auto">
+            Celebrity Tinder!
+          </NavbarBrand>
+          <NavbarToggler onClick={toggleNavbar} className="me-2" />
+          <Collapse isOpen={!collapsed} navbar>
+            <Nav navbar>
+              <NavItem>
+                <NavLink to="/celebrityindex" className="nav-link">
+                  Meet Our Stars
+                </NavLink>
+              </NavItem>
+
+              <NavItem>
+                <NavLink to="/catnew" className="nav-link">
+                  Add a Star
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
+    </>
   );
 }
 
